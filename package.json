@@ -1,0 +1,33 @@
+{
+  "name": "react-better-state",
+  "version": "1.0.1",
+  "description": "A custom React hook to manage state with proxy-based direct property assignments.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pivaros/react-better-state.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "state",
+    "proxy"
+  ],
+  "author": "Daniel Gurbin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pivaros/react-better-state/issues"
+  },
+  "homepage": "https://github.com/pivaros/react-better-state#readme",
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/react": "^17.0.0"
+  }
+}
