@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from "react";
 
-const useCoolState = <T extends object>(initialObj: T) => {
+const useBetterState = <T extends object>(initialObj: T) => {
   const [state, setState] = useState<T>(initialObj);
   const stateRef = useRef(state);
 
@@ -38,4 +38,4 @@ const useCoolState = <T extends object>(initialObj: T) => {
   return proxy;
 };
 
-export default useCoolState;
+export default useBetterState;

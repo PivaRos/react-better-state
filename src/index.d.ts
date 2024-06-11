@@ -7,5 +7,5 @@ declare module "react-better-state" {
    * @param initialObj - The initial state object.
    * @returns A proxy to interact with state properties directly.
    */
-  export default function useCoolState<T extends object>(initialObj: T): T;
+  export function useBetterState<T extends object>(initialObj: T): T;
 }

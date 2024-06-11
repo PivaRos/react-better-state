@@ -1,1 +1,1 @@
-export { default as useCoolState } from "./useCoolState";
+export { default as useBetterState } from "./useBetterState";

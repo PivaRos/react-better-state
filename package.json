@@ -1,11 +1,11 @@
 {
   "name": "react-better-state",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "A custom React hook to manage state with proxy-based direct property assignments.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && copyfiles -u 1 src/index.d.ts dist"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,11 @@
   },
   "homepage": "https://github.com/pivaros/react-better-state#readme",
   "peerDependencies": {
-    "react": "^17.0.0"
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.0.0",
-    "@types/react": "^17.0.0"
+    "@types/react": "^17.0.0",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.0.0"
   }
 }

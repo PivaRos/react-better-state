@@ -15,7 +15,7 @@ npm install react-better-state
 ```ts
 ...
 import React from "react";
-import { useCoolState } from "react-better-state";
+import { useBetterState } from "react-better-state";
 
 type MyType = {
   name: string;
@@ -23,7 +23,7 @@ type MyType = {
 };
 
 function App() {
-  const obj = useCoolState<MyType>({ name: "daniel", age: 19 });
+  const obj = useBetterState<MyType>({ name: "daniel", age: 19 });
 
   return (
     <>
