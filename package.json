@@ -1,6 +1,6 @@
 {
   "name": "react-better-state",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "A custom React hook to manage state with proxy-based direct property assignments.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
