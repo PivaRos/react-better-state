@@ -1,6 +1,11 @@
 import { useState, useRef, useCallback } from "react";
 
-const useBetterState = <T extends object>(initialObj: T) => {
+export type StateOptions<T> = { onChange?: (newState: T) => void };
+
+const useBetterState = <T extends Object>(
+  initialObj: T,
+  { onChange = () => {} }: StateOptions<T> = {}
+) => {
   const [state, setState] = useState<T>(initialObj);
   const stateRef = useRef(state);
 
@@ -14,6 +19,10 @@ const useBetterState = <T extends object>(initialObj: T) => {
         return prevState;
       }
       // Create a new state object only if the value has changed
+      onChange({
+        ...prevState,
+        [key]: value,
+      });
       return {
         ...prevState,
         [key]: value,
