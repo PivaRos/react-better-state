@@ -32,13 +32,8 @@ The example below demonstrates how `react-better-state` can be integrated into a
 import React from "react";
 import { useBetterState } from "react-better-state";
 
-type MyType = {
-  name: string;
-  age: number;
-};
-
 function App() {
-  const obj = useBetterState<MyType>(
+  const obj = useBetterState(
     { name: "Daniel", age: 19 },
     {
       onChange: (newState) => {

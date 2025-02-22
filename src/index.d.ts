@@ -26,6 +26,4 @@ declare module "react-better-state" {
     initialObj: T,
     options?: StateOptions<T>
   ): T;
-
-  export default useBetterState;
 }
